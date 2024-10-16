@@ -1,8 +1,8 @@
 const { livros } = require("./livros"); //trazendo o array autores
 
 function listarLivros() {
-    livros.forEach(livros => {
-        console.log(livros);
+    livros.forEach(livro => {
+        console.log(livro);
     });
 }
 
