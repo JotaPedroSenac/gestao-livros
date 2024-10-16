@@ -18,4 +18,15 @@ const { criarAutor }  = require("./autor/criarAutor");
 
 const autor1 = criarAutor("Zezinho", "zezinho@email.com");
 
+// ;
+const {listarAutores } = require("./autor/listarAutor");
+const {listarLivros } = require("./livros/listarLivro");
+
 listarAutores();
+
+const {criarLivros} = require("./livros/criarLivro"); //importando a função criar livros
+criarLivros("Livro de fulano", "Zezinho", "12345");
+
+listarLivros();
+
+
