@@ -83,11 +83,29 @@
 //     contador++
 // }
 
-const prompt = require('prompt-sync')();
+// const prompt = require('prompt-sync')();
 
-let valor;
+// let valor;
 
 
-do {
-    valor = prompt('Digite um valor');
-} while (valor !== 'sair');
+// do {
+//     valor = prompt('Digite um valor');
+// } while (valor !== 'sair');
+
+const dados = [1,2,3,4,5,6,0];
+
+let indice = dados.indexOf();
+
+function excluir(numero){
+    for (let i = 0; i < dados.length; i++) {
+        if (numero == dados[i]) {
+            dados.splice(numero - 1 , 1);
+            console.log(dados);
+        }
+        
+    }
+}
+
+excluir(4);
+
+

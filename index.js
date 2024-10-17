@@ -22,11 +22,15 @@ const autor1 = criarAutor("Zezinho", "zezinho@email.com");
 const {listarAutores } = require("./autor/listarAutor");
 const {listarLivros } = require("./livros/listarLivro");
 
-listarAutores();
+
 
 const {criarLivros} = require("./livros/criarLivro"); //importando a função criar livros
-criarLivros("Livro de fulano", "Zezinho", "12345");
+criarLivros("Livro de fulano", autor1, "12345");
 
+const autor2 = criarAutor("Joaozinho", "joaozinho@email.com");
+criarLivros("Livro de Joaozin", autor2, "12345");
+
+listarAutores();
 listarLivros();
 
 
